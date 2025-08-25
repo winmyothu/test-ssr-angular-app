@@ -1,0 +1,9 @@
+<div *ngIf="isBrowser; else ssrFallback">
+      <h1>About Page</h1>
+      <p>This page is rendered only on the client side (CSR).</p>
+</div>
+
+<ng-template #ssrFallback>
+      <p>Loading About page...</p>
+</ng-template>
+
